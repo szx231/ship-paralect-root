@@ -9,8 +9,8 @@
     "paralect"
   ],
   "scripts": {
-    "build": "next build && next export -o build",
-    "serve": "serve -p 3002 build",
+    "build": "NODE_ENV=prod next build && NODE_ENV=prod next export -o build",
+    "serve": "NODE_ENV=prod serve -p 3002 build",
     "dev": "next dev -p 3002",
     "start": "next start -p 3002",
     "storybook": "start-storybook -p 6007",
