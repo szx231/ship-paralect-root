@@ -22,7 +22,17 @@ const base = {
     },
     bucket: process.env.CLOUD_STORAGE_BUCKET || '',
   },
-  firebase: process.env.FIREBASE_CONFIG || '',
+  firebase: process.env.FIREBASE_CONFIG || {
+    apiKey: 'AIzaSyC_A94gZ2flgxNVvPCbBwOfLiI9a74_xc4',
+    authDomain: 'paralect-test-image.firebaseapp.com',
+    projectId: 'paralect-test-image',
+    storageBucket: 'paralect-test-image.appspot.com',
+    messagingSenderId: '706125805621',
+    appId: '1:706125805621:web:bf281de28cc5ea280d597c',
+    measurementId: 'G-L7L4V2K75L',
+    url: 'https://paralect-test-image.firebaseio.com',
+    bucket: 'gs://paralect-test-image.appspot.com',
+  },
   adminKey: process.env.ADMIN_KEY || '',
   google: {
     clientId: process.env.GOOGLE_CLIENT_ID || '',

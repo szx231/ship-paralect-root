@@ -10,7 +10,7 @@ const Footer: FC = () => {
   return (
     <LayoutFooter
       height="50px"
-      sx={(theme) => ({
+      sx={() => ({
         marginTop: 'auto',
         padding: '12px 0',
         textAlign: 'center',
@@ -32,7 +32,7 @@ const Footer: FC = () => {
           gap: '20px',
         }}
       >
-        Хочу писать код в Paralect!!!
+        {year}
         <Link type="router" href="https://t.me/zxc2c22" inherit underline={false} inNewTab={false}>
           <TelegramIcon />
         </Link>
